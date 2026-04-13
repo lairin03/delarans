@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formStatus.textContent = 'Enviando mensaje...';
 
     const templateParams = {
-      to_email: 'Delaranslairin9@gmail.com',
+      to_email: 'delarans03@outlook.com',
       user_name: name,
       user_email: email,
       user_phone: phone,
