@@ -1,3 +1,6 @@
+// Inicializar EmailJS
+emailjs.init('fJlIgfCLwYbHG-_F');
+
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -112,22 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     formStatus.textContent = 'Enviando mensaje...';
 
-    fetch('http://localhost:3000/send-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ user_name: name, user_email: email, user_phone: phone, message })
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) {
-          formStatus.textContent = '¡Mensaje enviado con éxito! Te contactaremos pronto.';
-          form.reset();
-        } else {
-          formStatus.textContent = 'Error: ' + (data.error || 'No se pudo enviar.');
-        }
+    const templateParams = {
+      to_email: 'Delaranslairin9@gmail.com',
+      user_name: name,
+      user_email: email,
+      user_phone: phone,
+      message: message
+    };
+
+    emailjs.send('service_hxxzkql', 'template_3cwa03p', templateParams)
+      .then(() => {
+        formStatus.textContent = '¡Mensaje enviado con éxito! Te contactaremos pronto.';
+        form.reset();
       })
-      .catch(() => {
-        formStatus.textContent = 'Error de conexión. Asegúrate de que el servidor está activo.';
+      .catch(error => {
+        console.error('Error:', error);
+        formStatus.textContent = 'Error al enviar el mensaje. Intenta nuevamente.';
       });
   });
 
