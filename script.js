@@ -1,5 +1,5 @@
 // Inicializar EmailJS
-emailjs.init('fJlIgfCLwYbHG-_F');
+emailjs.init('oMGA9so7ezfLS7e4p');
 
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('nav-toggle');
