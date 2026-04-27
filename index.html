@@ -7,7 +7,7 @@
   <title>Delarans Studio | Agencia Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,9 +17,9 @@
     <div class="container header__inner">
     <a href="#inicio" class="brand">
         <span class="brand__icon" aria-hidden="true">
-            <img src="imagenes/L (7).png" alt="Logo Delarans" width="200" height="80">
+            <img src="Imagenes/Logo Delarans.png" alt="Logo Delarans">
         </span>
-        Delarans
+        <span class="brand__name">Delarans</span>
     </a>
       <nav class="nav" id="nav-menu" aria-label="Menú principal">
         <ul class="nav__list">
@@ -43,14 +43,15 @@
 
   <main>
     <section class="hero" id="inicio">
+      <div class="hero-shape"></div>
       <div class="container hero__content">
         <div class="hero__left">
-          <span class="eyebrow">Agencia Digital | Tecnología & Innovación</span>
-          <h1>Construimos experiencias digitales impactantes para startups y marcas modernas.</h1>
-          <p>Desarrollo web, tiendas virtuales, marketing digital y analítica. Soluciones ágiles, seguras y diseñadas para convertir.</p>
+          <span class="eyebrow">Estrategias digitales</span>
+          <h1>Estrategias digitales que impulsan marcas fuertes.</h1>
+          <p>Combinamos creatividad, tecnología y análisis para hacer crecer tu negocio en el entorno digital.</p>
           <div class="hero__actions">
-            <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
-            <a href="#portafolio" class="btn btn-secondary">Ver portafolio</a>
+            <a href="#servicios" class="btn btn-primary">Conoce nuestros servicios</a>
+            <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
           </div>
         </div>
         <div class="hero__cards">
@@ -63,24 +64,32 @@
             <p>Clientes que confían en nuestro equipo creativo.</p>
           </div>
         </div>
+        <div class="hero__logo">
+          <img src="Imagenes/Logo Delarans.png" alt="Logo Delarans">
+          <p class="hero__logo-text">Delarans</p>
+        </div>
       </div>
     </section>
 
     <section class="stats" aria-label="Resultados clave">
       <div class="container stats__grid">
         <article class="stat-card">
+          <span class="stat-icon">&#x1F4CA;</span>
           <strong class="stat-number" data-target="78">0</strong>
           <p>Clientes satisfechos</p>
         </article>
         <article class="stat-card">
+          <span class="stat-icon">&#x1F4BB;</span>
           <strong class="stat-number" data-target="80">0</strong>
           <p>Proyectos completados</p>
         </article>
         <article class="stat-card">
+          <span class="stat-icon">&#x23F2;</span>
           <strong class="stat-number" data-target="5">0</strong>
           <p>Años de experiencia</p>
         </article>
         <article class="stat-card">
+          <span class="stat-icon">&#x1F30E;</span>
           <strong class="stat-number" data-target="5">0</strong>
           <p>Países atendidos</p>
         </article>
@@ -94,19 +103,34 @@
       </div>
       <div class="container services__grid">
         <article class="service-card">
+          <div class="service-card__icon">&#x1F3AF;</div>
+          <h3>Estrategia Digital</h3>
+          <p>Planificamos estrategias a medida para alcanzar tus objetivos.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">&#x1F4AC;</div>
+          <h3>Gestión de Redes Sociales</h3>
+          <p>Creemos, administramos y optimizamos tu presencia en redes.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">&#x1F4E3;</div>
+          <h3>Publicidad Online</h3>
+          <p>Campañas efectivas que generan resultados medibles.</p>
+        </article>
+        <article class="service-card">
           <div class="service-card__icon">&#x1F4BB;</div>
-          <h3>Desarrollo web</h3>
-          <p>Interfaces escalables, accesibles y optimizadas para que tu marca brille en cada pantalla.</p>
+          <h3>Diseño Web</h3>
+          <p>Sitios modernos, rápidos y optimizados para convertir.</p>
         </article>
         <article class="service-card">
-          <div class="service-card__icon">&#x1F6D2;</div>
-          <h3>E-commerce</h3>
-          <p>Tiendas virtuales rentables, seguras y listas para impulsar ventas con experiencia de usuario premium.</p>
+          <div class="service-card__icon">&#x1F4CA;</div>
+          <h3>Analítica y Reportes</h3>
+          <p>Medimos, analizamos y optimizamos cada paso de tu crecimiento.</p>
         </article>
         <article class="service-card">
-          <div class="service-card__icon">&#x1F4F1;</div>
-          <h3>Marketing digital</h3>
-          <p>Estrategias de crecimiento, campañas de alto impacto y posicionamiento para captar clientes reales.</p>
+          <div class="service-card__icon">&#x1F4B8;</div>
+          <h3>Posicionamiento de Marca</h3>
+          <p>Fortalecemos tu identidad para destacar en un entorno competitivo.</p>
         </article>
       </div>
     </section>
@@ -251,7 +275,7 @@
           </div>
           <div class="form-group">
             <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="user_phone" placeholder="+57 304 235 7606" required />
+            <input type="tel" id="phone" name="user_phone" placeholder="+57 123 456 7890" required />
           </div>
           <div class="form-group form-group--full">
             <label for="message">Mensaje</label>
