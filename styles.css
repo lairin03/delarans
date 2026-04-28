@@ -194,7 +194,6 @@ a {
   position: relative;
   overflow: hidden;
   background-color: #0A0F1C;
-  background-image: url('Imagenes/L (7).png');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -269,14 +268,14 @@ a {
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
+  align-items: center;   
   gap: 0.5rem;
   margin-bottom: 1.2rem;
   color: var(--primary);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.84rem;
+  font-size: 2.5rem;
 }
 
 .eyebrow::before {
@@ -366,8 +365,8 @@ a {
 }
 
 .hero__logo img {
-  width: 180px;
-  height: 180px;
+  width: 320px;
+  height: 320px;
   object-fit: contain;
   filter: drop-shadow(0 8px 24px rgba(109, 92, 255, 0.24));
 }
@@ -800,7 +799,7 @@ a {
   min-height: 520px;
   border-radius: 32px;
   background: linear-gradient(180deg, rgba(109, 92, 255, 0.35), rgba(138, 124, 255, 0.12)),
-    url('Imagenes/L (7).png') center/cover no-repeat;
+    url('Imagenes/logo_individual.png') center/cover no-repeat;
 }
 
 .testimonials {
